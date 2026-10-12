@@ -18,7 +18,7 @@ define<{ count: number }, Msg>()('gy-counter', {
   update: { Increment: (s) => ({ count: s.count + 1 }) },
   view: (s, i) => html`
     <output>${s.count}</output>
-    <button type='button' data-intent=${i.Increment}>Increment</button>
+    <button type="button" data-intent=${i.Increment}>Increment</button>
   `,
 });
 ```
